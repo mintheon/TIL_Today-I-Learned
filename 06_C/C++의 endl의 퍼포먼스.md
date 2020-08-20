@@ -101,6 +101,7 @@ int main(void) {
 문서를 보면 stream하고 output sequence 하고 동기화를 시킨다고 되어있다. 또한 `For stream buffer objects that implement ~ buffers, ~` `stream에서 어딘가로 written을 한다.` 그리고 내부적으로는 `버퍼로 구현된` 이라는 문구를 확인할 수 있다.
 
 ![](./images/2020-08-20-09-46-37.png)
+
 endl을 만난 경우에, `\n`을 추가하고, `flush` 처리를 한다.
 
 ![](./images/2020-08-20-09-47-00.png)
