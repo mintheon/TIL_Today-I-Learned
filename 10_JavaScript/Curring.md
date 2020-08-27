@@ -66,3 +66,5 @@ const sliceArray = (start, end) => (arr) => {
 //사용법
 mapArray((el, idx) => `${idx + 1}. ${el}`)([1, 2, 3, 4, 5]);
 ```
+
+[출처](https://velog.io/@hwang-eunji/Javascript-Curring)
