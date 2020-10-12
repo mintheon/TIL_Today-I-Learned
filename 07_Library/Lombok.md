@@ -315,3 +315,22 @@ public class Person {
 이렇게 Lombok에 대하여 알아보았습니다. Lombok은 코드의 다이어트와 가독성 및 유지보수에 많은 도움이 될 수 있습니다. 하지만 편리한만큼 잘 못 사용하여 독이 될 수도 있다고 합니다. 따라서 객체를 생성하거나 메서드를 제공할 때 캡슐화나 응집도, 결합도 측면을 조금만 더 깊게 생각해보고 Lombok을 상황에 맞게 사용하는 것이 중요하다고 생각을 합니다.
 
 출처 : https://hooongs.tistory.com/244
+
+---
+
+#### Test에서 `Lombok` 사용하는 방법
+
+테스트 코드에서 Lobmok을 사용하려고 했더니 패키지를 찾지 못한다는 에러로 골머리를 썩었다.
+
+여차저차 알아보니 테스트환경에서 lombok을 사용하려면 test 의존성 scope를 추가해주어야 한다. 테스트 코드를 이때까지 사용하지 않아서 벌어진 참극이다.
+
+**build.gradle**
+```
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.14'
+    annotationProcessor 'org.projectlombok:lombok:1.18.14'
+    
+    testCompileOnly 'org.projectlombok:lombok:1.18.14' // 테스트 의존성 추가
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.14' // 테스트 의존성 추가
+}
+```
