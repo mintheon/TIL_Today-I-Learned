@@ -17,3 +17,11 @@
 - **Override 메서드 자동완성 (Implement Methods)**
   MacOS: Ctrl + i
   Win/Linux: Ctrl + i
+
+### Translator(확장프로그램)
+
+- 자동해석 단어 추천 & replace
+  Ctrl + Command + O
+
+- 번역기 띄우기
+  Ctrl + Command + I
